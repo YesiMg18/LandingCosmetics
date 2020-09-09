@@ -11,6 +11,7 @@ body {
 .contenedor {
   position: relative;
   background-image: url(./assets/backgroud_cosmetics.png);
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,8 +84,8 @@ button:hover {
 }
 
 .textoPreguntas {
-  font-size: 25px;
-  line-height: 140%;
+  font-size: 22px;
+  line-height: 160%;
   letter-spacing: 0.1em;
   padding: 50px;
   margin: 30px;
@@ -98,9 +99,9 @@ button:hover {
 .imagenGif img {
   position: absolute;
   width: 80%;
-  transform: rotate(-40deg);
+  transform: rotate(-30deg);
   top: -250px;
-  right: -50px;
+  right: 0;
 }
 
 .contenedor3 {
@@ -109,8 +110,8 @@ button:hover {
 }
 
 .imagenProductos img {
-  max-width: 550px;
-  width: 90%;
+  max-width: 600px;
+  width: 100%;
   padding: 30px;
   margin: 30px;
 }
@@ -130,23 +131,39 @@ button:hover {
   margin: 0;
   text-align: center;
   letter-spacing: 0.12em;
-  background-color: coral;
 }
 
 .contenedor4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 100px;
-
 }
 
 .imagenMujer1 img {
   max-width: 400px;
   width: 100%;
-  text-align: center;
 }
 
 .imagenMujer2 img {
-    max-width: 400px;
-    width: 100%;
-  }∫
+  max-width: 400px;
+  width: 100%;
+}
+
+.contenedor5 {
+  position: relative;
+  background-image: url(./assets/backgroud2_cosmetics.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 180px;
+}
+
+.textoPromo p {
+  background: #ebe4e7;
+  border-radius: 20px;
+  padding: 20px 30px;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
