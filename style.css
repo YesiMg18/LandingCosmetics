@@ -18,7 +18,7 @@ body {
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 120px 50px;
+  padding: 150px 50px;
 }
 .tituloPrincipal h1 {
   line-height: 75px;
@@ -82,7 +82,7 @@ form {
 .textoColor {
   background: #ebe4e7;
   border-radius: 0px 20px 20px 0px;
-  padding: 30px 50px;
+  padding: 30px 50px 10px;
   font-size: 22px;
   letter-spacing: 0.3em;
   display: inline-block;
@@ -94,10 +94,10 @@ form {
 }
 
 .textoPreguntas {
-  font-size: 22px;
-  line-height: 160%;
+  font-size: 23px;
+  line-height: 170%;
   letter-spacing: 0.1em;
-  padding: 50px;
+  padding: 40px;
   margin: 30px;
   font-weight: 300;
   display: flex;
@@ -118,10 +118,11 @@ form {
 }
 
 .imagenProductos img {
-  max-width: 600px;
+  max-width: 650px;
   width: 100%;
   padding: 30px;
   margin: 30px;
+  top: -100px;
 }
 
 .textoProductos p {
@@ -146,8 +147,8 @@ form {
   grid-template-columns: 1fr 1fr;
   margin: 100px auto;
   text-align: center;
-  width: 80%;
-  grid-gap: 20px;
+  width: 65%;
+  grid-gap: 50px;
 }
 
 .contenedor5 {
@@ -170,6 +171,7 @@ form {
 }
 .botonModal {
   position: fixed;
+  z-index: 3000;
   bottom: 50px;
   right: 50px;
   display: none;
@@ -248,14 +250,19 @@ form {
 }
 @media only screen and (max-width: 500px) {
   .tituloPrincipal h1 {
-    font-size: 34px;
+    font-size: 50px;
   }
   .textoColor {
     border-radius: 0;
     text-align: center;
-    padding: 10px;
+    padding: 30px 10px;
     width: 100%;
   }
+
+  .textoPreguntas {
+    font-size: 18px;
+  }
+
   .contenedor5 {
     padding: 0;
   }
