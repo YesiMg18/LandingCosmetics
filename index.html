@@ -30,47 +30,49 @@
           ? ""
           : decodeURIComponent(results[1].replace(/\+/g, " "));
       }
-      var partner = getParameterByName("partner");
-      switch (partner){
-        case "87946":
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '2772682063052773');
-          fbq('track', 'PageView');
-        break;
-        case "84613":
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '613967492621724');
-          fbq('track', 'PageView');
-        break;
-        case "84629":
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '325001718952611');
-          fbq('track', 'PageView');
-        break;
-        default:
-          console.log("muerte :v")
-        break;
+      function sendPixel(){
+        var partner = getParameterByName("partner");
+        switch (partner){
+          case "87946":
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '2772682063052773');
+            fbq('track', 'PageView');
+          break;
+          case "84613":
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '613967492621724');
+            fbq('track', 'PageView');
+          break;
+          case "84629":
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '325001718952611');
+            fbq('track', 'PageView');
+          break;
+          default:
+            console.log("muerte :v")
+          break;
+        }
       }
     </script>
     <noscript><img height="1" width="1" style="display:none"
@@ -261,7 +263,10 @@
         }
        }).then(res => res.json())
        .then(result => {
-        if(result.result =="success") {alert("We will contact you :)");}
+        if(result.result =="success") {
+          sendPixel();
+          alert("We will contact you :)");
+        }
         else{alert("sorry something went wrong");}
        });
     });
@@ -284,8 +289,11 @@
         }
        }).then(res => res.json())
        .then(result => {
-         if(result.result =="success") {alert("We will contact you :)");}
-         else{alert("sorry something went wrong");}
+        if(result.result =="success") {
+          sendPixel();
+          alert("We will contact you :)");
+        }
+        else{alert("sorry something went wrong");}
        });
     });
     function getIpAddress(){
