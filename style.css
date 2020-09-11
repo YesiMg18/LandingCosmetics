@@ -28,7 +28,7 @@ body {
 .labelImage {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -20px;
+  width: 100%;
 }
 /* 
 form {
@@ -161,7 +161,7 @@ form {
   grid-template-columns: 1fr 1fr;
   margin: 100px auto;
   text-align: center;
-  width: 65%;
+  width: 50%;
   grid-gap: 50px;
 }
 
@@ -259,10 +259,12 @@ form {
   .contenedor5 {
     padding: 50px 20px;
   }
+  .tituloPrincipal h1 {
+    display: none;
+  }
 }
 @media only screen and (max-width: 500px) {
   .tituloPrincipal h1 {
-    font-size: 50px;
     display: none;
   }
   .textoColor {
