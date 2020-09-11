@@ -25,6 +25,11 @@ body {
   letter-spacing: 0.295em;
   font-size: 54px;
 }
+.labelImage {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
 /* 
 form {
   position: absolute;
@@ -103,6 +108,15 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.textoPreguntas p {
+  font-weight: 600;
+}
+
+.textoPreguntas p img {
+  width: 20px;
+  margin-bottom: 5px;
 }
 
 .imagenGif img {
@@ -229,9 +243,7 @@ form {
   .contenedor3 {
     width: 80%;
   }
-  .contenedorFormulario {
-    display: none;
-  }
+
   .botonModal {
     display: block;
   }
@@ -251,6 +263,7 @@ form {
 @media only screen and (max-width: 500px) {
   .tituloPrincipal h1 {
     font-size: 50px;
+    display: none;
   }
   .textoColor {
     border-radius: 0;
