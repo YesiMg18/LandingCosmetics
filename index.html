@@ -90,18 +90,21 @@
       class=""
     >
      <img src="./assets/icono_formulario.svg" alt="Formulario">
+     <div class="contenedor">
     </button>
-    <div class="contenedor">
+    <section>
+      <video autoplay muted loop id="myVideo">
+        <source src="./assets/lifting.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
       <div class="tituloPrincipal">
         <h1>
-          GET <br />
-          YOUR SKIN <br />
-          BETTER NOW
+          We are the best in facial treatments
         </h1>
       </div>
       <div class="contenedorFormulario">
         <form id="form0">
-          <h3 class="animate__animated animate__fadeInRight">GET YOUR FREE CONSULTATION</h3>
+          <h3 class="animate__animated animate__fadeInRight">¡Register now and get a free consult with a specialist!</h3>
           <ul>
             <li>
               <input type="text" id="Name" placeholder="Name:" required />
@@ -116,12 +119,13 @@
               <input type="email" id="Email" placeholder="Email:" required />
             </li>
             <li>
-              <button type="submit">Submit</button>
+              <button type="submit">I want a free consult</button>
             </li>
           </ul>
         </form>
       </div>
-    </div>
+    </section>
+  
 
     <div class="textoColor">
       <p>FREE CONSULTATION</p>
@@ -130,8 +134,7 @@
     <div class="contenedor2">
       <div class="textoPreguntas">
         <p>
-           <img src="./assets/caja.png" alt="icon"> Are you dealing with heavy acne? <br />Pustules and cystst
-          white/blackheads
+           <img src="./assets/caja.png" alt="icon"> Are you dealing with a Rosacea, Psoriasis or any condition?
         </p>
         
         <p> <img src="./assets/caja.png" alt="icon"> Do you have scars from acne or surgical sites?</p>
@@ -194,7 +197,21 @@
       <div class="textoPromo">
         <p>GET YOUR FREE CONSULTATION NOW!</p>
       </div>
+      <p class="privacyPolicy">
+        PRIVACY POLICY
+        OUR PRIVACY PROMISE
+        We respect your privacy and your choices.
+        We make sure that privacy and security are embedded in everything we do.
+        We will not send you marketing communications unless you have asked us to. You can change your mind at any time.
+        We will never sell your personal data.
+        We are committed to keeping your personal data safe and secure. This includes only working with trusted partners.
+        We are committed to being open and transparent about how we use your personal data.
+        We will not use your personal data in ways that we have not told you about.
+        We respect your rights, and will always try to accommodate your requests as far as is possible, in line with our own
+        legal and operational responsibilities.
+      </p>
     </div>
+
     <div
       class="modal fade"
       id="exampleModal"
@@ -204,6 +221,9 @@
     >
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       
       <form class="modalFormulario" id="form1">
         <h3>GET YOUR FREE CONSULTATION</h3>
@@ -220,8 +240,7 @@
           <li>
             <input type="email" id="Email1" placeholder="Email:" required />
           </li>
-          <li>
-            <button type="submit">Submit</button>
+          <li><button type="submit">I WANT A FREE CONSULT</button>
           </li>
         </ul>
       </form>

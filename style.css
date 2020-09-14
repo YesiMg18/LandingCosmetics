@@ -7,23 +7,48 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-
+section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: rgba(108, 97, 102, 0.73);
+}
+section div {
+  width: 50%;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
+  object-fit: cover;
+}
 .contenedor {
   position: relative;
-  background-image: url(./assets/backgroud_cosmetics.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 150px 50px;
 }
+
 .tituloPrincipal h1 {
   line-height: 75px;
-  letter-spacing: 0.295em;
+  letter-spacing: 13px;
   font-size: 54px;
+  text-transform: uppercase;
+  color: white;
 }
 .labelImage {
   display: flex;
@@ -56,8 +81,8 @@ form {
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-  letter-spacing: 0.1em;
-  color: #696969;
+  letter-spacing: 2px;
+  color: #ffffff;
 }
 
 .contenedorFormulario form li input {
@@ -70,13 +95,18 @@ form {
   padding: 10px;
 }
 
+.contenedorFormulario form li input::placeholder {
+  color: white;
+}
+
 .contenedorFormulario button {
-  background: #e0d0d7;
+  color: #e0d0d7;
   border-radius: 15px;
+  font-weight: 600;
   border: none;
   padding: 10px 50px;
-  color: white;
-
+  background-color: white;
+  text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
@@ -91,6 +121,8 @@ form {
   font-size: 22px;
   letter-spacing: 0.3em;
   display: inline-block;
+  top: -45px;
+  position: relative;
 }
 .contenedor2 {
   display: grid;
@@ -102,7 +134,7 @@ form {
   font-size: 23px;
   line-height: 170%;
   letter-spacing: 0.1em;
-  padding: 40px;
+  padding: 40px 90px;
   margin: 30px;
   font-weight: 300;
   display: flex;
@@ -121,10 +153,16 @@ form {
 
 .imagenGif img {
   width: 70%;
-  margin: 0 0 0 20px;
+  margin: 160px 0 0 30px;
   transform: rotate(-30deg);
 }
-
+.close {
+  font-size: 70px;
+  font-weight: 200;
+  margin: 0 30px;
+  position: absolute;
+  right: 0;
+}
 .contenedor3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -182,11 +220,15 @@ form {
   font-size: 22px;
   letter-spacing: 0.3em;
   text-align: center;
+  margin-bottom: 80px;
+}
+.textoPromo small {
+  text-align: center;
 }
 .botonModal {
   position: fixed;
   z-index: 3000;
-  bottom: 50px;
+  bottom: -285px;
   right: 50px;
   display: none;
   border: 0;
@@ -264,18 +306,41 @@ form {
   }
 }
 @media only screen and (max-width: 500px) {
-  .tituloPrincipal h1 {
+  .contenedorFormulario form {
+    width: 100%;
+    padding: 0;
+  }
+  #myVideo {
+    left: 0;
+    top: 0;
+    width: 125%;
+  }
+  .tituloPrincipal {
     display: none;
   }
+  section div {
+    width: 100%;
+  }
   .textoColor {
+    font-size: 12px;
+    width: 90%;
+    margin: auto;
     border-radius: 0;
     text-align: center;
     padding: 30px 10px;
     width: 100%;
   }
+  .privacyPolicy {
+    font-size: 12px;
+  }
 
   .textoPreguntas {
+    padding: 20px;
+    margin: 0 30px 80px;
     font-size: 18px;
+  }
+  .imagenProductos img {
+    padding: 0;
   }
 
   .contenedor5 {
@@ -283,5 +348,15 @@ form {
   }
   .textoPromo p {
     font-size: 18px;
+  }
+  .contenedorFormulario button {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .privacyPolicy {
+    font-size: 12px;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
   }
 }
