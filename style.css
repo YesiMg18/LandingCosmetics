@@ -73,7 +73,6 @@ form {
 
 .contenedorFormulario form li {
   list-style: none;
-  margin: 20px;
 
   text-align: center;
 }
@@ -83,10 +82,10 @@ form {
   text-align: center;
   letter-spacing: 2px;
   color: #ffffff;
+  margin: auto 30px;
 }
 
 .contenedorFormulario form li input {
-  max-width: 480px;
   width: 100%;
   height: 35px;
   border: 2px solid #e0d0d7;
@@ -100,7 +99,7 @@ form {
 }
 
 .contenedorFormulario button {
-  color: #e0d0d7;
+  color: #80596a;
   border-radius: 15px;
   font-weight: 600;
   border: none;
@@ -108,10 +107,26 @@ form {
   background-color: white;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  font-size: 22px;
+}
+
+.formu {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 35px;
+}
+.formu li input {
+  width: 100%;
+}
+
+.inputCompleto {
+  grid-column: span 2;
 }
 
 .contenedorFormulario button:hover {
   background-color: #ac949f;
+  color: white;
 }
 
 .textoColor {
@@ -202,8 +217,27 @@ form {
   width: 50%;
   grid-gap: 50px;
 }
-
 .contenedor5 {
+  padding: 0;
+}
+
+.contenedor5 .buttonPrivacy {
+  border: none;
+  border-bottom: 2px solid #80596a;
+  font-size: 20px;
+  background-color: transparent;
+  margin: 10px;
+}
+.modal-content {
+  background-color: white;
+  padding: 80px;
+}
+
+.modal-content button {
+  bottom: 560px;
+}
+
+/*.contenedor5 {
   position: relative;
   background-image: url(./assets/backgroud2_cosmetics.png);
   background-position: center;
@@ -212,21 +246,8 @@ form {
   padding: 180px;
 }
 
-.textoPromo p {
-  background: #ebe4e7;
-  border-radius: 20px;
-  padding: 20px 30px;
-  font-weight: 300;
-  font-size: 22px;
-  letter-spacing: 0.3em;
-  text-align: center;
-  margin-bottom: 80px;
-}
-.textoPromo small {
-  text-align: center;
-}
 .botonModal {
-  position: fixed;
+  
   z-index: 3000;
   bottom: -285px;
   right: 50px;
@@ -271,7 +292,8 @@ form {
   letter-spacing: 0.2em;
   line-height: 120%;
   margin: 30px 0;
-}
+}*/
+
 @media only screen and (max-width: 1200px) {
   .contenedor,
   .contenedor2,
@@ -322,7 +344,7 @@ form {
     width: 100%;
   }
   .textoColor {
-    font-size: 12px;
+    font-size: 18px;
     width: 90%;
     margin: auto;
     border-radius: 0;
@@ -330,7 +352,7 @@ form {
     padding: 30px 10px;
     width: 100%;
   }
-  .privacyPolicy {
+  .privacyP teolicy {
     font-size: 12px;
   }
 
@@ -343,9 +365,6 @@ form {
     padding: 0;
   }
 
-  .contenedor5 {
-    padding: 0;
-  }
   .textoPromo p {
     font-size: 18px;
   }
@@ -353,10 +372,84 @@ form {
     font-size: 14px;
     letter-spacing: 0;
   }
-  .privacyPolicy {
+  .privacyP teolicy {
     font-size: 12px;
     width: 90%;
     margin: auto;
     text-align: justify;
   }
+}
+
+.contenedorFormulario2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.contenedorFormulario2 form {
+  padding: 20px;
+}
+
+.contenedorFormulario2 form li {
+  list-style: none;
+
+  text-align: center;
+}
+.contenedorFormulario2 form h3 {
+  font-size: 23px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #000;
+  text-transform: uppercase;
+
+  margin: auto 30px;
+}
+
+.contenedorFormulario2 form li input {
+  width: 100%;
+  height: 35px;
+  border: 2px solid #e0d0d7;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.contenedorFormulario2 form li input::placeholder {
+  color: #000;
+}
+
+.contenedorFormulario2 button {
+  color: white;
+  border-radius: 15px;
+  font-weight: 600;
+  border: none;
+  padding: 10px 50px;
+  background-color: #bca8b1;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.formu2 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 35px;
+}
+.formu2 li input {
+  width: 100%;
+}
+
+.inputCompleto2 {
+  grid-column: span 3;
+}
+
+.contenedorFormulario2 button:hover {
+  background-color: #ac949f;
+  color: white;
+}
+
+.buttonPrivacy {
+  text-decoration: none;
 }

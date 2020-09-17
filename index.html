@@ -21,6 +21,19 @@
     <title>Cosmetics</title>
     <!-- Facebook Pixel Code -->
     <script>
+(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/5f639b2df5e7fd002a06aba6/5f639b2ef5e7fd002a06aba9.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();
+
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(67445005, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
 
       function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -81,7 +94,7 @@
     <!-- End Facebook Pixel Code -->
   </head>
   <body onLoad="getIpAddress()">
-    <button
+   <!-- <button
       type="button"
       class="botonModal"
       data-toggle="modal"
@@ -90,8 +103,8 @@
       class=""
     >
      <img src="./assets/icono_formulario.svg" alt="Formulario">
-     <div class="contenedor">
-    </button>
+     
+    </button>-->
     <section>
       <video autoplay muted loop id="myVideo">
         <source src="./assets/lifting.mp4" type="video/mp4">
@@ -99,27 +112,27 @@
       </video>
       <div class="tituloPrincipal">
         <h1>
-          We are the best in facial treatments
+          GIVE YOUR SKIN A LITTLE LOVE AND WELLNESS
         </h1>
       </div>
       <div class="contenedorFormulario">
         <form id="form0">
           <h3 class="animate__animated animate__fadeInRight">¡Register now and get a free consult with a specialist!</h3>
-          <ul>
+          <ul class="formu">
             <li>
               <input type="text" id="Name" placeholder="Name:" required />
             </li>
             <li>
               <input type="text" id="LastName" placeholder="Last Name:" required />
             </li>
-            <li>
+            <li class="inputCompleto">
               <input type="tel" id="Phone" placeholder="Phone:" required />
             </li>
-            <li>
+            <li class="inputCompleto">
               <input type="email" id="Email" placeholder="Email:" required />
             </li>
-            <li>
-              <button type="submit">I want a free consult</button>
+            <li class="inputCompleto">
+              <button type="submit">GET FREE CONSULT</button>
             </li>
           </ul>
         </form>
@@ -131,7 +144,7 @@
       <p>FREE CONSULTATION</p>
     </div>
 
-    <div class="contenedor2">
+<!--     <div class="contenedor2">
       <div class="textoPreguntas">
         <p>
            <img src="./assets/caja.png" alt="icon"> Are you dealing with a Rosacea, Psoriasis or any condition?
@@ -160,7 +173,7 @@
           ALL OF THESE.
         </p>
       </div>
-    </div>
+    </div> -->
 
     <div class="textoTratamiento">
       <p>WE HAVE TREATMENTS FOR EACH SKIN TYPE</p>
@@ -174,9 +187,9 @@
         </div>
         <div id="container1" class="twentytwenty-container">
           <!-- The before image is first -->
-          <img src="./assets/imagen_2.png" />
+          <img src="./assets/imagen8.jpg" />
           <!-- The after image is last -->
-          <img src="./assets/imagen_1.png" />
+          <img src="./assets/imagen7.jpg" />
         </div>
       </div>
       <div>
@@ -186,17 +199,77 @@
         </div>
         <div id="container1" class="twentytwenty-container">
           <!-- The before image is first -->
-          <img src="./assets/imagen_4.png" />
+          <img src="./assets/imagen6.jpg" />
           <!-- The after image is last -->
-          <img src="./assets/imagen_3.png" />
+          <img src="./assets/imagen5.jpg" />
         </div>
       </div>
     </div>
 
-    <div class="contenedor5">
-      <div class="textoPromo">
-        <p>GET YOUR FREE CONSULTATION NOW!</p>
+    <div class="contenedor4">
+      <div>
+        <div class="labelImage">
+          <p>BEFORE</p>
+          <p>AFTER</p>
+        </div>
+        <div id="container1" class="twentytwenty-container">
+          <!-- The before image is first -->
+          <img src="./assets/imagen4.jpg" />
+          <!-- The after image is last -->
+          <img src="./assets/imagen3.jpg" />
+        </div>
       </div>
+      <div>
+        <div class="labelImage">
+          <p>BEFORE</p>
+          <p>AFTER</p>
+        </div>
+        <div id="container1" class="twentytwenty-container">
+          <!-- The before image is first -->
+          <img src="./assets/imagen2.jpg" />
+          <!-- The after image is last -->
+          <img src="./assets/imagen1.jpg" />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="contenedorFormulario2">
+      <form id="form0">
+        <h3 class="animate__animated animate__fadeInRight">¡Register now and get a free consult with a specialist!</h3>
+        <ul class="formu2">
+          <li>
+            <input type="text" id="Name" placeholder="Name:" required />
+          </li>
+          <li>
+            <input type="text" id="LastName" placeholder="Last Name:" required />
+          </li>
+          <li >
+            <input type="tel" id="Phone" placeholder="Phone:" required />
+          </li>
+          <li class="inputCompleto2">
+            <input type="email" id="Email" placeholder="Email:" required />
+          </li>
+          <li class="inputCompleto2">
+            <button type="submit">GET YOUR FREE CONSULTATION NOW!</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+
+    <!--<div class="contenedor5">
+      <button
+      type="button"
+      
+      data-toggle="modal"
+      data-target="#legalModal"
+      id="botonModal"
+      class=""
+    >
+     <img src="./assets/icono_formulario.svg" alt="Formulario">
+     
+    </button>
       <p class="privacyPolicy">
         PRIVACY POLICY
         OUR PRIVACY PROMISE
@@ -210,9 +283,9 @@
         We respect your rights, and will always try to accommodate your requests as far as is possible, in line with our own
         legal and operational responsibilities.
       </p>
-    </div>
+    </div>-->
 
-    <div
+    <!--<div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -244,6 +317,41 @@
           </li>
         </ul>
       </form>
+    </div>
+    </div>
+   
+     </div>-->
+     
+     <div class="contenedor5">
+        <button
+        type="button"
+        class="buttonPrivacy"
+        data-toggle="modal"
+        data-target="#legalModal"
+        id="botonModal"
+        
+      >
+       Privacy Policy
+      </button>
+        
+      </div>
+
+        
+     <div
+      class="modal fade"
+      id="legalModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+
+    >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+       <!-- pOn html -->
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+       <p> <b>PRIVACY POLICY OUR PRIVACY PROMISE</b> </br></br> We respect your privacy and your choices. We make sure that privacy and security are embedded in everything we do. We will not send you marketing communications unless you have asked us to. You can change your mind at any time. We will never sell your personal data. We are committed to keeping your personal data safe and secure. This includes only working with trusted partners. We are committed to being open and transparent about how we use your personal data. We will not use your personal data in ways that we have not told you about. We respect your rights, and will always try to accommodate your requests as far as is possible, in line with our own legal and operational responsibilities.</p>
     </div>
     </div>
    
