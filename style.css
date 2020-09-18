@@ -204,7 +204,7 @@ form {
 
 .textoTratamiento {
   font-size: 25px;
-  margin: 0;
+  margin-top: 50px;
   text-align: center;
   letter-spacing: 0.12em;
 }
@@ -212,7 +212,7 @@ form {
 .contenedor4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 100px auto;
+  margin: 50px auto;
   text-align: center;
   width: 50%;
   grid-gap: 50px;
